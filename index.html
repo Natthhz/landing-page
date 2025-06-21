@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Fan Base</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">#</div>
+            <div class="main-header">
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Anime</a></li>
+                    <li><a href="#">Manga</a></li>
+                    <li><a href="#">Forum</a></li>
+                </ul>
+            </div>
+            <div class="right-nav">
+                <div class="search-container">
+                    <input type="search" placeholder="Search">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="user-actions">
+                    <button class="btn login-btn" id="loginButton">Login</button>
+                    <button class="btn signup-btn" id="signupButton">Sign Up</button>
+                </div>
+
+                <div class="toggle-container">
+                    <!-- <div class="toggle-wrapper">
+                        <span class="toggle-label">JP</span>
+                        <div class="toggle" id="lang-toggle"></div>
+                        <span class="toggle-label">EN</span>
+                    </div> -->
+
+                    <button id="mode-toggle" class="mode-button">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>The Next-generation Anime Wiki Platform</h1>
+                <p>Track, share, and discover your favorite anime and manga with our community</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn primary-btn">Browse Anime</a>
+                    <a href="#" class="btn secondary-btn">Join Community</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories">
+            <div class="container">
+                <h2 class="section-title">Explore Categories</h2>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <div class="category-icon"><i class="fas fa-tv"></i></div>
+                        <h3>Anime</h3>
+                        <p>Discover thousands of anime series and movies</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon"><i class="fas fa-book"></i></div>
+                        <h3>Manga</h3>
+                        <p>Explore popular manga from all genres</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon"><i class="fas fa-book-open"></i></div>
+                        <h3>Light Novel</h3>
+                        <p>Read the latest light novels and discussions</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon"><i class="fas fa-user-alt"></i></div>
+                        <h3>Characters</h3>
+                        <p>Learn about your favorite anime characters</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="featured-section">
+            <div class="container">
+                <h2 class="section-title">Featured Content</h2>
+                <div class="featured-slider">
+                    <div class="featured-slide">
+                        <div class="featured-card">
+                            <div class="featured-image">
+                                <img src="placeholder.jpg" alt="Featured content">
+                            </div>
+                            <div class="featured-content">
+                                <h3>The Angel Next Door Spoils Me Rotten</h3>
+                                <p>Explore the heartwarming romance between Shiina Mahiru and her neighbor</p>
+                                <a href="#" class="btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Characters Section -->
+        <section class="popular-characters">
+            <div class="container">
+                <h2 class="section-title">Popular Characters</h2>
+                <p class="section-description">Meet the most beloved anime characters</p>
+
+                <!-- First block of 6 characters -->
+                <div class="character-block active" id="character-block-1">
+                    <div class="character-grid">
+                        <a href="#" class="character-card">
+                            <div class="character-image">
+                                <img src="/web/icons/Shiina Mahiru.jpg" alt="Shiina Mahiru">
+                            </div>
+                            <div class="character-name">Shiina Mahiru</div>
+                        </a>
+                        <a href="#" class="character-card">
+                            <div class="character-image">
+                                <img src="placeholder.jpg" alt="Kaoruko Waguri">
+                            </div>
+                            <div class="character-name">Kaoruko Waguri</div>
+                        </a>
+                        <a href="#" class="character-card">
+                            <div class="character-image">
+                                <img src="placeholder.jpg" alt="Kurisu Makise">
+                            </div>
+                            <div class="character-name">Kurisu Makise</div>
+                        </a>
+                        <a href="#" class="character-card">
+                            <div class="character-image">
+                                <img src="placeholder.jpg" alt="C.C">
+                            </div>
+                            <div class="character-name">C.C</div>
+                        </a>
+                        <a href="#" class="character-card">
+                            <div class="character-image">
+                                <img src="placeholder.jpg" alt="Kaguya Shinomiya">
+                            </div>
+                            <div class="character-name">Kaguya Shinomiya</div>
+                        </a>
+                        <a href="#" class="character-card">
+                            <div class="character-image">
+                                <img src="placeholder.jpg" alt="Kitagawa Marin">
+                            </div>
+                            <div class="character-name">Kitagawa Marin</div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Second block of 6 characters (hidden by default) -->
+                <div class="character-block" id="character-block-2" style="display: none;">
+                    <div class="character-grid">
+                        <a href="#" class="character-card">
+                            <div class="character-image">
+                                <img src="placeholder.jpg" alt="Kurumi Tokisaki">
+                            </div>
+                            <div class="character-name">Kurumi Tokisaki</div>
+                        </a>
+                        <a href="#" class="character-card">
+                            <div class="character-image">
+                                <img src="placeholder.jpg" alt="Violet Evergarden">
+                            </div>
+                            <div class="character-name">Violet Evergarden</div>
+                        </a>
+                        <a href="#" class="character-card">
+                            <div class="character-image">
+                                <img src="placeholder.jpg" alt="Asuna Yuuki">
+                            </div>
+                            <div class="character-name">Asuna Yuuki</div>
+                        </a>
+                        <a href="#" class="character-card">
+                            <div class="character-image">
+                                <img src="placeholder.jpg" alt="Rem">
+                            </div>
+                            <div class="character-name">Rem</div>
+                        </a>
+                        <a href="#" class="character-card">
+                            <div class="character-image">
+                                <img src="placeholder.jpg" alt="Mikasa Ackerman">
+                            </div>
+                            <div class="character-name">Mikasa Ackerman</div>
+                        </a>
+                        <a href="#" class="character-card">
+                            <div class="character-image">
+                                <img src="placeholder.jpg" alt="Zero Two">
+                            </div>
+                            <div class="character-name">Zero Two</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="character-navigation">
+                    <div class="pagination">
+                        <span class="page active" data-page="1"></span>
+                        <span class="page" data-page="2"></span>
+                    </div>
+                    <button id="show-more" class="show-all-btn">Show More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Character Profile Sample Section - Improved -->
+        <section class="character-spotlight">
+            <div class="container">
+                <h2 class="section-title">Character Spotlight</h2>
+                <div class="spotlight-container">
+                    <div class="spotlight-image">
+                        <img src="/web/icons/Shiina Mahiru.jpg" alt="Character spotlight">
+                        <div class="spotlight-badge">Featured</div>
+                    </div>
+                    <div class="spotlight-details">
+                        <div class="spotlight-header">
+                            <h2 class="character-name">Shiina Mahiru</h2>
+                            <div class="character-nickname">"The Angel Next Door"</div>
+                        </div>
+
+                        <div class="character-info">
+                            <div class="info-column">
+                                <div class="info-group">
+                                    <h3 class="info-title">Profile</h3>
+                                    <div class="info-row">
+                                        <span class="info-label">Full Name:</span>
+                                        <span class="info-value">Shiina Mahiru</span>
+                                    </div>
+                                    <div class="info-row">
+                                        <span class="info-label">Japanese:</span>
+                                        <span class="info-value">椎名 真白</span>
+                                    </div>
+                                    <div class="info-row">
+                                        <span class="info-label">Birthday:</span>
+                                        <span class="info-value">December 6th</span>
+                                    </div>
+                                    <div class="info-row">
+                                        <span class="info-label">Gender:</span>
+                                        <span class="info-value">Female</span>
+                                    </div>
+                                    <div class="info-row">
+                                        <span class="info-label">Height:</span>
+                                        <span class="info-value">155 cm</span>
+                                    </div>
+                                    <div class="info-row">
+                                        <span class="info-label">Blood Type:</span>
+                                        <span class="info-value">O</span>
+                                    </div>
+                                </div>
+
+                                <div class="info-group">
+                                    <h3 class="info-title">Media</h3>
+                                    <div class="info-row">
+                                        <span class="info-label">Series:</span>
+                                        <span class="info-value">The Angel Next Door Spoils Me Rotten</span>
+                                    </div>
+                                    <div class="info-row">
+                                        <span class="info-label">Voice Actor:</span>
+                                        <span class="info-value">Manaka Iwami</span>
+                                    </div>
+                                    <div class="info-row">
+                                        <span class="info-label">First Appearance:</span>
+                                        <span class="info-value">Light Novel Vol. 1 (2019)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-column">
+                                <div class="info-group">
+                                    <h3 class="info-title">Community Ratings</h3>
+                                    <div class="rating-row">
+                                        <span class="rating-label">Popularity</span>
+                                        <div class="rating-bar">
+                                            <div class="rating-fill" style="width:92%"></div>
+                                        </div>
+                                        <span class="rating-value">9.2/10</span>
+                                    </div>
+                                    <div class="rating-row">
+                                        <span class="rating-label">Character Development</span>
+                                        <div class="rating-bar">
+                                            <div class="rating-fill" style="width:85%"></div>
+                                        </div>
+                                        <span class="rating-value">8.5/10</span>
+                                    </div>
+                                    <div class="rating-row">
+                                        <span class="rating-label">Design</span>
+                                        <div class="rating-bar">
+                                            <div class="rating-fill" style="width:88%"></div>
+                                        </div>
+                                        <span class="rating-value">8.8/10</span>
+                                    </div>
+                                </div>
+
+                                <div class="spotlight-actions">
+                                    <button class="btn primary-btn">View Full Profile</button>
+                                    <button class="btn secondary-btn">Add to Favorites</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="character-brief">
+                            <h3 class="brief-title">About Shiina Mahiru</h3>
+                            <p class="brief-text">
+                                Shiina Mahiru is the main heroine of "The Angel Next Door Spoils Me Rotten." Despite her
+                                cold exterior at school, she's a caring and gentle person who excels at housework. After
+                                helping her neighbor Amane during his illness, she begins to develop a special bond with
+                                him while maintaining her "perfect girl" reputation at school.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="spotlight-navigation">
+                    <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i> Previous</button>
+                    <button class="nav-btn next-btn">Next <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="company-info">
+                <h3>Anime Fan Base</h3>
+                <p>The ultimate platform for anime and manga enthusiasts to discover, track, and share their favorite
+                    content.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Social Media</h4>
+                <ul>
+                    <li><a href="#"><i class="fab fa-discord"></i> Discord</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="far fa-envelope"></i> Email</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Anime Fan Base. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Login</h2>
+            <form action="#" class="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn primary-btn">Login</button>
+            </form>
+            <p class="form-footer">Don't have an account? <a href="#" id="showSignup">Sign up</a></p>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal" id="signupModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Sign Up</h2>
+            <form action="#" class="signup-form">
+                <div class="form-group">
+                    <label for="newUsername">Username</label>
+                    <input type="text" id="newUsername" placeholder="Choose a username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="newPassword">Password</label>
+                    <input type="password" id="newPassword" placeholder="Create a password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+                </div>
+                <button type="submit" class="btn primary-btn">Sign Up</button>
+            </form>
+            <p class="form-footer">Already have an account? <a href="#" id="showLogin">Login</a></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
