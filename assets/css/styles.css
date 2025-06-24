@@ -1,6 +1,6 @@
 /* Base Styles */
 :root {
-    --primary-color: #8C52FF;
+    --primary-color: #FF6B6B;
     --secondary-color: #FFD2FC;
     --dark-color: #1E1E2C;
     --light-color: #F9F7FF;
@@ -38,7 +38,7 @@ body {
 }
 
 body.dark-mode {
-    --primary-color: #9D71FF;
+    --primary-color: #8C52FF;
     --secondary-color: #503795;
     --dark-color: #121218;
     --light-color: #1E1E2C;
@@ -223,7 +223,7 @@ body.dark-mode .search-container input {
 
 .login-btn {
     background-color: transparent;
-    color: var(--text-primary);
+    color: var(--text-color);
     border: 1px solid var(--border-color);
 }
 
@@ -327,12 +327,13 @@ body.dark-mode .mode-button:hover {
     font-size: 3rem;
     margin-bottom: 1rem;
     line-height: 1.2;
+    color: var(--text-color);
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    color: var(--text-secondary);
+    color: var(--text-color);
 }
 
 .hero-buttons {
@@ -354,7 +355,7 @@ body.dark-mode .mode-button:hover {
 
 .secondary-btn {
     background-color: transparent;
-    color: var(--text-primary);
+    color: white;
     border: 1px solid var(--text-primary);
     padding: 0.8rem 1.5rem;
 }
@@ -931,7 +932,7 @@ section {
 }
 
 .primary-btn {
-    background-color: #ff6b6b;
+    background-color: var(--primary-color);
     color: white;
 }
 
@@ -941,7 +942,7 @@ section {
 
 .secondary-btn {
     background-color: transparent;
-    color: #555;
+    color: var(--text-color);
     border: 1px solid #ccc;
 }
 
