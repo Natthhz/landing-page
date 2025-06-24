@@ -1,4 +1,4 @@
-## Anime Website - Landing Page Only
+## Anime Website - Landing Page Only (Progress)
 
 This repository contains the **landing page** of an anime fan website project.  
 The design focuses on a clean and modern look, introducing the platform and guiding users to explore anime, manga, and community content.  
